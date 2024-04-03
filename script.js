@@ -1,3 +1,16 @@
+/*
+    Trevor Kulczycki-McIntyre
+    Assignment 2
+    Internet Programming section 00001
+
+*/
+
+
+
+
+
+
+// Declaring Constants
 const totalBox = document.getElementById(`total-text`);
 
 const calcBtn = document.getElementById(`calc-button`);
@@ -8,6 +21,8 @@ const dinBox = document.getElementsByClassName(`dinner-box`)[0];
 
 const formBox = document.getElementsByClassName(`form-box`)[0];
 
+
+// Submit Button that verifies if the fields are properly filled 
 subBtn.addEventListener(`click`, function () {
     let fName = document.getElementById(`fname`).value;
     let lName = document.getElementById(`lname`).value;
@@ -42,7 +57,7 @@ else{
 
 });
 
-
+// Calculation logic for Calculation Button
 calcBtn.addEventListener(`click`, function () {
 
     let ecomFee = document.getElementById(`ecom-check`).checked ? 295 : 0;

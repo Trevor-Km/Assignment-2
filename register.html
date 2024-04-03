@@ -1,161 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XYZ Educators-Register</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+<!-- 
+    Trevor Kulczycki-McIntyre
+    Assignment 2
+    Internet Programming section 00001
+ -->
 
-<body>
-    <div class="wrapper">
-        <header class="page-header">
-            <h1>XYZ Educators</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="programs.html">Programs</a>
-                <a href="register.html">Register</a>
-            </nav>
-        </header>
-
-
-
-
-        <div class="form-box">
-            <form action="">
-                <div class="input-box">
-                    <Label for="fname">* First Name:</Label>
-                    <Input type="text" id="fname" required></Input>
-                </div>
-                <div class="input-box">
-                    <Label for="lname">* Last Name:</Label>
-                    <Input type="text" id="lname" required></Input>
-                </div>
-                <div class="input-box">
-                    <Label for="name">* Email:</Label>
-                    <Input type="email" required id="email"></Input>
-                </div>
-                <div class="input-box">
-                    <Label for="name" id="telephone">Telephone:</Label>
-                    <Input type="number"></Input>
-                </div>
-
-
-
-            </form>
-        </div>
-
-        <div class="table-box">
-            <table>
-                <tr class="colored-row">
-                    <th>
-                        Apply
-                    </th>
-                    <th>
-                        Program
-                    </th>
-                    <th>
-                        Fee
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" id="ecom-check">
-                    </td>
-                    <td>
-                        Introduction to E-Commerce
-                    </td>
-                    <td>
-                        $295.00
-                    </td>
-                </tr>
-
-                <tr class="colored-row">
-                    <td>
-                        <input type="checkbox" id="future-check">
-                    </td>
-
-                    <td>
-                        Future Of Web Programming
-                    </td>
-
-                    <td>
-                        $295.00
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <input type="checkbox" id="web-check">
-                    </td>
-
-                    <td>
-                        Web Programming
-                    </td>
-
-                    <td>$395.00</td>
-                </tr>
-
-                <tr class="colored-row">
-                    <td>
-                        <input type="checkbox" id="net-check">
-                    </td>
-                    <td>
-                        Network Security
-                    </td>
-
-                    <td>
-                        $395.00
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="dinner-box">
-            <label for="dinner">Opening Night Dinner &mdash; Additional $30 : </label>
-            <input type="checkbox" id="dinner-check">
-
-        </div>
-
-
-        <button id="calc-button">Calculate</button>
-        <div class="total-box">
-
-            <label for="total">Total:</label>
-            <input type="text" readonly id="total-text">
-
-            <button id="submit-button">Submit</button>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <footer><small> &copy 2024 XYZ Educators </small></footer>
-    </div>
-
-
-
-
-
-    <script src="script.js"></script>
-</body>
-
-
-
-
-</html>
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <title>XYZ Educators-Register</title>
+     <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+     <link rel="icon" href="icon.ico"> <!-- Favicon -->
+ </head>
+ 
+ <body>
+     <div class="wrapper">
+         <!-- Header section -->
+         <header class="page-header">
+             <h1>XYZ Educators</h1>
+             <!-- Navigation links -->
+             <nav>
+                 <a href="index.html">Home</a>
+                 <a href="programs.html">Programs</a>
+                 <a href="register.html">Register</a>
+             </nav>
+         </header>
+ 
+         <!-- Form section -->
+         <div class="form-box">
+             <form action="">
+                 <!-- Input fields -->
+                 <div class="input-box">
+                     <label for="fname">* First Name:</label>
+                     <input type="text" id="fname" required>
+                 </div>
+                 <div class="input-box">
+                     <label for="lname">* Last Name:</label>
+                     <input type="text" id="lname" required>
+                 </div>
+                 <div class="input-box">
+                     <label for="name">* Email:</label>
+                     <input type="email" required id="email">
+                 </div>
+                 <div class="input-box">
+                     <label for="name" id="telephone">Telephone:</label>
+                     <input type="number">
+                 </div>
+             </form>
+         </div>
+ 
+         <!-- Table section -->
+         <div class="table-box">
+             <table>
+                 <!-- Table headers -->
+                 <tr class="colored-row">
+                     <th>Apply</th>
+                     <th>Program</th>
+                     <th>Fee</th>
+                 </tr>
+                 <!-- Table rows -->
+                 <tr>
+                     <td><input type="checkbox" id="ecom-check"></td>
+                     <td>Introduction to E-Commerce</td>
+                     <td>$295.00</td>
+                 </tr>
+                 <!-- Colored row -->
+                 <tr class="colored-row">
+                     <td><input type="checkbox" id="future-check"></td>
+                     <td>Future Of Web Programming</td>
+                     <td>$295.00</td>
+                 </tr>
+                 <tr>
+                     <td><input type="checkbox" id="web-check"></td>
+                     <td>Web Programming</td>
+                     <td>$395.00</td>
+                 </tr>
+                 <!-- Colored row -->
+                 <tr class="colored-row">
+                     <td><input type="checkbox" id="net-check"></td>
+                     <td>Network Security</td>
+                     <td>$395.00</td>
+                 </tr>
+             </table>
+         </div>
+ 
+         <!-- Dinner option section -->
+         <div class="dinner-box">
+             <label for="dinner">Opening Night Dinner &mdash; Additional $30:</label>
+             <input type="checkbox" id="dinner-check">
+         </div>
+ 
+         <!-- Calculate button section -->
+         <button id="calc-button">Calculate</button>
+         
+         <!-- Total section -->
+         <div class="total-box">
+             <label for="total">Total:</label>
+             <input type="text" readonly id="total-text">
+             <!-- Submit button -->
+             <button id="submit-button">Submit</button>
+         </div>
+ 
+         <!-- Footer section -->
+         <footer><small>&copy 2024 XYZ Educators</small></footer>
+     </div>
+ 
+     <!-- JavaScript file -->
+     <script src="script.js"></script>
+ </body>
+ 
+ </html> 
+ 

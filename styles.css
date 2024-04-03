@@ -1,9 +1,20 @@
+
+/* 
+    Trevor Kulczycki-McIntyre
+    Assignment 2
+    Internet Programming section 00001
+ */
+
+
+
+
+/* Remove Default Padding and Margin */
 * {
     margin: 0;
     padding: 0;
 }
 
-
+/* General Styles */
 body {
     background-color: rgb(238, 238, 225);
 }
@@ -15,20 +26,12 @@ nav a:hover {
 }
 
 
-
-
-
-
-
 .about-us h2 {
     color: rgb(61, 194, 61);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: xx-large;
 
 }
-
-
-
 
 
 
@@ -41,7 +44,7 @@ nav a:hover {
 
 
 
-
+/* Contact Information */
 .contact-info {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 5%;
@@ -98,7 +101,7 @@ footer {
     color: rgb(58, 178, 58);
     font-weight: bold;
 }
-
+/* Program Columns */
 .program-cols {
     width: 80%;
     text-align: center;
@@ -129,7 +132,7 @@ h3 {
 
 }
 
-
+/* Program Pictures */
 .prog-pic {
     width: 50%;
     margin: auto;
@@ -147,6 +150,7 @@ h3 {
 
 /* register.html */
 
+/* Form */
 .form-box {
     margin-left: 5%;
     margin-top: 3%;
@@ -172,7 +176,7 @@ h3 {
     font-size: x-large;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+/* Table */
 table {
     border-collapse: collapse;
     border: solid rgb(58, 187, 58) 2px;
@@ -207,7 +211,7 @@ th {
 .colored-row {
     background-color: #b8d9c8;
 }
-
+/* Optional Dinner */
 .dinner-box {
     margin: auto;
     text-align: center;
@@ -219,6 +223,7 @@ th {
 
 }
 
+/* Checkboxes */
 #ecom-check {
     height: 20px;
     width: 20px;
@@ -281,7 +286,7 @@ th {
 
 
 
-
+/* Total Section */
 .total-box {
     text-align: center;
     margin-top: 3%;
@@ -309,6 +314,7 @@ th {
 
 }
 
+/* Calculate and Submit Buttons */
 #calc-button {
     display: block;
     text-align: center;
@@ -352,7 +358,7 @@ th {
     color: rgb(58, 187, 58);
     border-color: rgb(58, 187, 58);
 }
-
+/* Javascript Added Elements */
 .invalid-purchase {
     color: red;
     margin-top: 2%;
@@ -370,7 +376,7 @@ th {
 
 /* Media Queries */
 
-
+/* Large Screens */
 @media only screen and (min-width: 1000px) {
 
     header nav {
@@ -510,7 +516,7 @@ th {
 
 
 
-
+/* Medium Screens */
 @media only screen and (min-width: 650px) and (max-width: 999px) {
 
 
@@ -617,7 +623,7 @@ th {
 
 
 }
-
+/* Small Screens */
 @media only screen and (min-width: 280px) and (max-width: 849px) {
     header h1 {
         text-align: center;
